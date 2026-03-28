@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACL Injury & Footwear Study | Research Template</title>
+    <meta name="description" content="A study on the correlation between soccer footwear, level of play, and ACL injuries.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo">ACL<span>STUDY</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#study">Participate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="badge">Research Participation Open</span>
+                <h1>Footwear & <span class="highlight">ACL Resilience</span></h1>
+                <p>Help us investigate the link between soccer cleat technology, playing surfaces, and anterior cruciate ligament injuries.</p>
+                <div class="hero-actions">
+                    <a href="#study" class="btn btn-primary">Join Study</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Visual element or image goes here -->
+                <div class="abstract-shape"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section-padding" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About the Research</h2>
+                    <p>Understanding the biomechanical impact of footwear on high-intensity sports.</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="icon">⚽</div>
+                        <h3>The Problem</h3>
+                        <p>ACL tears remain one of the most significant injuries in soccer. While training methods have evolved, the relationship with modern footwear remains under-studied.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="icon">🧪</div>
+                        <h3>Our Goal</h3>
+                        <p>To identify if specific stud patterns (FG vs AG) or shoe brands correlate with higher injury rates across different playing levels.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="icon">📊</div>
+                        <h3>Why Participate</h3>
+                        <p>Your data contributes to a safer future for soccer players at all levels, from grassroots to professional ranks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Study Form Section -->
+        <section class="study-form section-padding" id="study">
+            <div class="container">
+                <div class="form-container glass">
+                    <div class="form-header">
+                        <h2>Research Questionnaire</h2>
+                        <p>Please provide accurate details. All entries are anonymous.</p>
+                    </div>
+                    
+                    <!-- Formspree Implementation -->
+                    <!-- REPLACE 'your_form_id' with your actual Formspree ID -->
+                    <form action="https://formspree.io/f/your_form_id" method="POST" id="acl-study-form">
+                        
+                        <div class="form-group row">
+                            <div class="input-wrapper">
+                                <label for="age">Current Age</label>
+                                <input type="number" id="age" name="age" required placeholder="e.g. 21">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="gender">Gender Identity</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="non-binary">Non-binary</option>
+                                    <option value="prefer-not-to-say">Prefer not to say</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="level">Primary Level of Play</label>
+                            <select id="level" name="level" required>
+                                <option value="" disabled selected>Select Level</option>
+                                <option value="recreational">Recreational / Sunday League</option>
+                                <option value="youth-club">Youth Club / Academy</option>
+                                <option value="collegiate">Collegiate (NCAA/Club)</option>
+                                <option value="semi-pro">Semi-Professional</option>
+                                <option value="professional">Professional</option>
+                            </select>
+                        </div>
+
+                        <div class="form-divider"><span>Injury History</span></div>
+
+                        <div class="form-group">
+                            <label>Have you ever sustained an ACL tear?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="acl_tear" value="yes" required> Yes
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="acl_tear" value="no"> No
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Conditional Logic: If Yes (Handled by JS or shown as is) -->
+                        <div id="injury-details" class="conditional-fields">
+                            <div class="form-group row">
+                                <div class="input-wrapper">
+                                    <label for="leg">Which leg was injured?</label>
+                                    <select id="leg" name="injured_leg">
+                                        <option value="left">Left</option>
+                                        <option value="right">Right</option>
+                                        <option value="both">Both (Bilaterial)</option>
+                                    </select>
+                                </div>
+                                <div class="input-wrapper">
+                                    <label for="surface">Surface Type during Injury</label>
+                                    <select id="surface" name="surface_type">
+                                        <option value="grass">Natural Grass</option>
+                                        <option value="turf-high">Artificial Turf (Modern/Deep)</option>
+                                        <option value="turf-low">Artificial Turf (Carpet/Short)</option>
+                                        <option value="indoor">Indoor Court</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="boots">Footwear worn at time of injury (Brand/Model)</label>
+                                <input type="text" id="boots" name="boot_model" placeholder="e.g. Nike Mercurial Vapor 15">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="studs">Stud Pattern</label>
+                                <select id="studs" name="stud_pattern">
+                                    <option value="FG">FG (Firm Ground)</option>
+                                    <option value="AG">AG (Artificial Grass)</option>
+                                    <option value="SG">SG (Soft Ground/Metal)</option>
+                                    <option value="TF">TF (Turf Shoes)</option>
+                                    <option value="IC">IC (Indoor Court)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comments">Additional Context (Optional)</label>
+                            <textarea id="comments" name="additional_info" rows="3" placeholder="Describe the mechanism of injury or footwear details..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit" id="submit-btn">Submit Participation</button>
+                    </form>
+                    <div id="form-status"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact/Template Info Section -->
+        <section class="info-section section-padding" id="contact">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-content">
+                        <h3>Template Information</h3>
+                        <p>This study interface is designed for researchers looking to collect high-quality data with a premium user experience.</p>
+                        <ul class="features">
+                            <li>Modern Athletic Aesthetic</li>
+                            <li>Formspree-Ready Backend</li>
+                            <li>Fully Responsive Interface</li>
+                            <li>Dark Mode Optimized</li>
+                        </ul>
+                    </div>
+                    <div class="contact-card glass">
+                        <h4>Lead Researcher</h4>
+                        <p>Placeholder Name</p>
+                        <p>University of Athletic Performance</p>
+                        <a href="mailto:research@example.edu" class="email-link">research@example.edu</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 ACL Study Template. Created for Research Purposes.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">ETHICS Board</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
