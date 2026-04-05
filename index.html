@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACL Injury & Footwear Study | Research Template</title>
-    <meta name="description" content="A study on the correlation between soccer footwear, level of play, and ACL injuries.">
-    
+    <title>Soccer ACL Injury Study</title>
+    <meta name="description"
+        content="A study on the correlation between soccer footwear, level of play, and ACL injuries.">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav class="glass-nav">
         <div class="nav-content">
-            <div class="logo">ACL<span>STUDY</span></div>
+            <div class="logo">SOCCER ACL INJURY<span>STUDY</span></div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#study">Participate</a></li>
@@ -27,20 +32,63 @@
     </nav>
 
     <main>
+        <!-- Ticker Marquee -->
+        <div class="player-ticker-wrap">
+            <div class="player-ticker">
+                <div class="ticker-content">
+                    <span>Alexia Putellas</span><span class="dot">•</span>
+                    <span>Sam Kerr</span><span class="dot">•</span>
+                    <span>Megan Rapinoe</span><span class="dot">•</span>
+                    <span>Alex Morgan</span><span class="dot">•</span>
+                    <span>Kadeisha Buchanan</span><span class="dot">•</span>
+                    <span>Janine Beckie</span><span class="dot">•</span>
+                    <span>Cloé Lacasse</span><span class="dot">•</span>
+                    <span>Vivianne Miedema</span><span class="dot">•</span>
+                    <span>Beth Mead</span><span class="dot">•</span>
+                    <span>Leah Williamson</span><span class="dot">•</span>
+                    <span>Catarina Macario</span><span class="dot">•</span>
+                    <span>Christen Press</span><span class="dot">•</span>
+                </div>
+                <!-- Duplicate for seamless looping -->
+                <div class="ticker-content" aria-hidden="true">
+                    <span>Alexia Putellas</span><span class="dot">•</span>
+                    <span>Sam Kerr</span><span class="dot">•</span>
+                    <span>Megan Rapinoe</span><span class="dot">•</span>
+                    <span>Alex Morgan</span><span class="dot">•</span>
+                    <span>Kadeisha Buchanan</span><span class="dot">•</span>
+                    <span>Janine Beckie</span><span class="dot">•</span>
+                    <span>Cloé Lacasse</span><span class="dot">•</span>
+                    <span>Vivianne Miedema</span><span class="dot">•</span>
+                    <span>Beth Mead</span><span class="dot">•</span>
+                    <span>Leah Williamson</span><span class="dot">•</span>
+                    <span>Catarina Macario</span><span class="dot">•</span>
+                    <span>Christen Press</span><span class="dot">•</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-top-cta">
+            <p class="fancy-cta">Join our study! Let's work together to stop the growing risk of ACL injury in young
+                female soccer players!</p>
+        </div>
+
         <!-- Hero Section -->
         <section class="hero" id="home">
             <div class="hero-content">
                 <span class="badge">Research Participation Open</span>
-                <h1>Footwear & <span class="highlight">ACL Resilience</span></h1>
-                <p>Help us investigate the link between soccer cleat technology, playing surfaces, and anterior cruciate ligament injuries.</p>
+                <h1>Role of Footwear and Playing Surface in <span class="highlight">Female ACL Injuries</span></h1>
+                <p>Help us investigate the link between soccer footwear, playing surface and anterior cruciate ligament
+                    injuries in teenage girls and young women.</p>
                 <div class="hero-actions">
                     <a href="#study" class="btn btn-primary">Join Study</a>
                     <a href="#about" class="btn btn-secondary">Learn More</a>
                 </div>
             </div>
             <div class="hero-visual">
-                <!-- Visual element or image goes here -->
-                <div class="abstract-shape"></div>
+                <div class="hero-image-container">
+                    <img src="assets/images/hero-knee.png" alt="Anatomical Knee highlighting ACL" class="hero-knee-img">
+                    <div class="hero-color-overlay"></div>
+                </div>
             </div>
         </section>
 
@@ -53,19 +101,40 @@
                 </div>
                 <div class="about-grid">
                     <div class="about-card">
-                        <div class="icon">⚽</div>
+                        <div class="icon">
+                            <img src="assets/knee_acl_blue.png" alt="Knee ACL anatomy diagram" class="card-icon-img">
+                        </div>
                         <h3>The Problem</h3>
-                        <p>ACL tears remain one of the most significant injuries in soccer. While training methods have evolved, the relationship with modern footwear remains under-studied.</p>
+                        <p>ACL injuries are a major growing concern in women's soccer affecting not just professional players but also many teenage players. There is still limited large-scale, player-reported data examining how modifiable factors such as footwear type, stud type and playing surface influence injury risk, particularly in teenage athletes.</p>
                     </div>
                     <div class="about-card">
-                        <div class="icon">🧪</div>
+                        <div class="icon">
+                            <!-- Soccer goal / net icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <!-- Goal frame -->
+                                <rect x="6" y="14" width="52" height="32" rx="1" />
+                                <!-- Ground line -->
+                                <line x1="2" y1="46" x2="62" y2="46" />
+                                <!-- Vertical net lines -->
+                                <line x1="19" y1="14" x2="19" y2="46" />
+                                <line x1="32" y1="14" x2="32" y2="46" />
+                                <line x1="45" y1="14" x2="45" y2="46" />
+                                <!-- Horizontal net lines -->
+                                <line x1="6" y1="24" x2="58" y2="24" />
+                                <line x1="6" y1="35" x2="58" y2="35" />
+                                <!-- Goal posts depth -->
+                                <line x1="6" y1="46" x2="2" y2="50" />
+                                <line x1="58" y1="46" x2="62" y2="50" />
+                                <line x1="2" y1="50" x2="62" y2="50" />
+                            </svg>
+                        </div>
                         <h3>Our Goal</h3>
-                        <p>To identify if specific stud patterns (FG vs AG) or shoe brands correlate with higher injury rates across different playing levels.</p>
+                        <p>This study aims to collect a large volume of data to examine these factors and how they may interact in affecting ACL injury risk in different age groups.</p>
                     </div>
                     <div class="about-card">
                         <div class="icon">📊</div>
                         <h3>Why Participate</h3>
-                        <p>Your data contributes to a safer future for soccer players at all levels, from grassroots to professional ranks.</p>
+                        <p>It takes two minutes, is completely anonymous and you would be contributing to knowledge that will hopefully change the future of ACL risk in women and girl soccer players.</p>
                     </div>
                 </div>
             </div>
@@ -78,97 +147,181 @@
                     <div class="form-header">
                         <h2>Research Questionnaire</h2>
                         <p>Please provide accurate details. All entries are anonymous.</p>
+
+                        <!-- Consent Dropdown -->
+                        <details class="consent-details">
+                            <summary>Consent to Participate in Research</summary>
+                            <div class="consent-content">
+                                <details class="sub-details">
+                                    <summary>Under 18 - Parental Consent</summary>
+                                    <div class="sub-content">
+                                        <p>You are invited to participate in a research study examining the relationship
+                                            between playing surface, footwear type, and the risk of ACL (anterior
+                                            cruciate ligament) injuries in female soccer players.</p>
+                                        <p>If you are under the age of 18, a parent or legal guardian must review this
+                                            information and provide consent before you participate.</p>
+
+                                        <p><strong>Parent/Guardian Consent:</strong></p>
+                                        <p>Your child is being invited to take part in a voluntary, anonymous survey
+                                            that will take approximately 3–5 minutes to complete. The survey includes
+                                            questions about soccer playing history, playing surfaces (e.g., grass vs.
+                                            turf), footwear, and any history of ACL injury.</p>
+                                        <p>No personally identifying information will be collected. All responses will
+                                            remain anonymous and confidential. The information gathered may be used for
+                                            research purposes, including presentations or publications, with the goal of
+                                            improving injury prevention in soccer.</p>
+                                        <p>Participation is completely voluntary. Your child may stop the survey at any
+                                            time without any consequences.</p>
+
+                                        <p>By allowing your child to proceed with the survey, you confirm that:</p>
+                                        <ul>
+                                            <li>You are the parent or legal guardian of the participant</li>
+                                            <li>You have read and understand the information above</li>
+                                            <li>You give permission for your child to participate in this study</li>
+                                        </ul>
+
+                                        <p><strong>Participant Assent (for players under 18):</strong></p>
+                                        <p>By continuing with the survey, you confirm that:</p>
+                                        <ul>
+                                            <li>You understand what the study is about</li>
+                                            <li>You agree to participate voluntarily</li>
+                                            <li>You understand that you can stop at any time</li>
+                                        </ul>
+
+                                        <p>If you have any questions about this study, please contact:
+                                            autumnoblenes2027@gmail.com</p>
+                                        <p>Thank you for your support and participation.</p>
+                                    </div>
+                                </details>
+                                <details class="sub-details">
+                                    <summary>Above 18 - Individual Consent</summary>
+                                    <div class="sub-content">
+                                        <p>You are invited to participate in a research study examining the relationship
+                                            between playing surface, footwear type, and the risk of ACL (anterior
+                                            cruciate ligament) injuries in female soccer players.</p>
+                                        <p>Participation in this study is voluntary. You may choose not to participate
+                                            or to stop the survey at any time without any consequences.</p>
+                                        <p>The survey will take approximately 3–5 minutes to complete. It includes
+                                            questions about your soccer playing history, playing surfaces, footwear, and
+                                            any history of ACL injury.</p>
+                                        <p>This survey is anonymous. No personally identifying information will be
+                                            collected, and your responses will be kept confidential.</p>
+                                        <p>The information collected may be used for research purposes, including
+                                            presentations or publications, with the goal of improving injury prevention
+                                            in soccer.</p>
+                                        <p>By proceeding to the survey, you confirm that:</p>
+                                        <ul>
+                                            <li>You meet the eligibility criteria (female soccer player aged 12-35)</li>
+                                            <li>You understand the information above</li>
+                                            <li>You voluntarily agree to participate</li>
+                                        </ul>
+                                        <p>If you have any questions about this study, please contact:
+                                            autumnoblenes2027@gmail.com</p>
+                                        <p>Thank you for your participation.</p>
+                                    </div>
+                                </details>
+                            </div>
+                        </details>
                     </div>
-                    
+
                     <!-- Formspree Implementation -->
-                    <!-- REPLACE 'your_form_id' with your actual Formspree ID -->
-                    <form action="https://formspree.io/f/your_form_id" method="POST" id="acl-study-form">
-                        
+                    <form action="https://formspree.io/f/xgopaeen" method="POST" id="acl-study-form">
+
                         <div class="form-group row">
                             <div class="input-wrapper">
                                 <label for="age">Current Age</label>
                                 <input type="number" id="age" name="age" required placeholder="e.g. 21">
                             </div>
                             <div class="input-wrapper">
-                                <label for="gender">Gender Identity</label>
+                                <label for="gender">Gender</label>
                                 <select id="gender" name="gender" required>
                                     <option value="" disabled selected>Select</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="non-binary">Non-binary</option>
-                                    <option value="prefer-not-to-say">Prefer not to say</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Male">Male</option>
                                 </select>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="level">Primary Level of Play</label>
+                            <label for="level">Level of Play</label>
                             <select id="level" name="level" required>
                                 <option value="" disabled selected>Select Level</option>
-                                <option value="recreational">Recreational / Sunday League</option>
-                                <option value="youth-club">Youth Club / Academy</option>
-                                <option value="collegiate">Collegiate (NCAA/Club)</option>
-                                <option value="semi-pro">Semi-Professional</option>
-                                <option value="professional">Professional</option>
+                                <option value="Recreational">Recreational</option>
+                                <option value="High School">High School</option>
+                                <option value="Club">Club</option>
+                                <option value="Collegiate">Collegiate</option>
+                                <option value="Semi-Professional">Semi-Professional</option>
+                                <option value="Professional">Professional</option>
                             </select>
                         </div>
 
                         <div class="form-divider"><span>Injury History</span></div>
 
                         <div class="form-group">
-                            <label>Have you ever sustained an ACL tear?</label>
+                            <label>Have you sustained an ACL tear in the past 5 years?</label>
                             <div class="radio-group">
                                 <label class="radio-label">
-                                    <input type="radio" name="acl_tear" value="yes" required> Yes
+                                    <input type="radio" name="acl_tear" value="Yes" required> Yes
                                 </label>
                                 <label class="radio-label">
-                                    <input type="radio" name="acl_tear" value="no"> No
+                                    <input type="radio" name="acl_tear" value="No"> No
                                 </label>
                             </div>
                         </div>
 
-                        <!-- Conditional Logic: If Yes (Handled by JS or shown as is) -->
-                        <div id="injury-details" class="conditional-fields">
+                        <!-- Conditional Logic: Show everything if Yes, show only surface/footwear if No -->
+                        <div id="injury-details" class="conditional-fields" style="display: none;">
+
+                            <div id="acl-specific-fields">
+                                <div class="form-group row">
+                                    <div class="input-wrapper">
+                                        <label for="injury-age">Age at time of injury</label>
+                                        <input type="number" id="injury-age" name="injury_age" placeholder="e.g. 18">
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <label for="leg">Which leg was injured?</label>
+                                        <select id="leg" name="injured_leg">
+                                            <option value="" disabled selected>Select Leg</option>
+                                            <option value="Left">Left</option>
+                                            <option value="Right">Right</option>
+                                            <option value="Both (Bilaterial)">Both (Bilaterial)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="form-group row">
                                 <div class="input-wrapper">
-                                    <label for="leg">Which leg was injured?</label>
-                                    <select id="leg" name="injured_leg">
-                                        <option value="left">Left</option>
-                                        <option value="right">Right</option>
-                                        <option value="both">Both (Bilaterial)</option>
+                                    <label for="surface">Primary playing surface (past year)</label>
+                                    <select id="surface" name="surface_type">
+                                        <option value="" disabled selected>Select Surface</option>
+                                        <option value="Natural Grass">Natural Grass</option>
+                                        <option value="Artificial Grass (Modern/Deep)">Artificial Grass (Modern/Deep)
+                                        </option>
+                                        <option value="Turf (Carpet/Thin)">Turf (Carpet/Thin)</option>
+                                        <option value="Indoor Court (Gym Floor)">Indoor Court (Gym Floor)</option>
                                     </select>
                                 </div>
                                 <div class="input-wrapper">
-                                    <label for="surface">Surface Type during Injury</label>
-                                    <select id="surface" name="surface_type">
-                                        <option value="grass">Natural Grass</option>
-                                        <option value="turf-high">Artificial Turf (Modern/Deep)</option>
-                                        <option value="turf-low">Artificial Turf (Carpet/Short)</option>
-                                        <option value="indoor">Indoor Court</option>
+                                    <label for="boots">Primary footwear (past year)</label>
+                                    <select id="boots" name="boot_type">
+                                        <option value="" disabled selected>Select Footwear</option>
+                                        <option value="Cleats">Cleats</option>
+                                        <option value="Turf Shoes">Turf Shoes</option>
+                                        <option value="Gym Shoes">Gym Shoes</option>
                                     </select>
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <label for="boots">Footwear worn at time of injury (Brand/Model)</label>
-                                <input type="text" id="boots" name="boot_model" placeholder="e.g. Nike Mercurial Vapor 15">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="studs">Stud Pattern</label>
-                                <select id="studs" name="stud_pattern">
-                                    <option value="FG">FG (Firm Ground)</option>
-                                    <option value="AG">AG (Artificial Grass)</option>
-                                    <option value="SG">SG (Soft Ground/Metal)</option>
-                                    <option value="TF">TF (Turf Shoes)</option>
-                                    <option value="IC">IC (Indoor Court)</option>
+                            <div class="form-group" id="stud-pattern-group" style="display: none;">
+                                <label for="studs">Stud Type</label>
+                                <select id="studs" name="stud_type">
+                                    <option value="" disabled selected>Select Stud Type</option>
+                                    <option value="Blade">Blade</option>
+                                    <option value="Round/Conical">Round/Conical</option>
+                                    <option value="Mixed (Blade &amp; Round)">Mixed (Blade &amp; Round)</option>
                                 </select>
                             </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="comments">Additional Context (Optional)</label>
-                            <textarea id="comments" name="additional_info" rows="3" placeholder="Describe the mechanism of injury or footwear details..."></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-submit" id="submit-btn">Submit Participation</button>
@@ -178,26 +331,15 @@
             </div>
         </section>
 
-        <!-- Contact/Template Info Section -->
+        <!-- Contact Section -->
         <section class="info-section section-padding" id="contact">
             <div class="container">
-                <div class="info-grid">
-                    <div class="info-content">
-                        <h3>Template Information</h3>
-                        <p>This study interface is designed for researchers looking to collect high-quality data with a premium user experience.</p>
-                        <ul class="features">
-                            <li>Modern Athletic Aesthetic</li>
-                            <li>Formspree-Ready Backend</li>
-                            <li>Fully Responsive Interface</li>
-                            <li>Dark Mode Optimized</li>
-                        </ul>
-                    </div>
-                    <div class="contact-card glass">
-                        <h4>Lead Researcher</h4>
-                        <p>Placeholder Name</p>
-                        <p>University of Athletic Performance</p>
-                        <a href="mailto:research@example.edu" class="email-link">research@example.edu</a>
-                    </div>
+                <div class="contact-card glass" style="text-align: center;">
+                    <h4>Lead Researcher</h4>
+                    <p>Autumn O'Blenes</p>
+                    <p>Aurora High School</p>
+                    <p>OPDL soccer player</p>
+                    <a href="mailto:autumnoblenes2027@gmail.com" class="email-link">autumnoblenes2027@gmail.com</a>
                 </div>
             </div>
         </section>
@@ -215,4 +357,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
