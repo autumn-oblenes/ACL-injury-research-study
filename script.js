@@ -69,6 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const bootsSelect = document.getElementById('boots');
     const studPatternGroup = document.getElementById('stud-pattern-group');
     const studsSelect = document.getElementById('studs');
+    const studCombinationGroup = document.getElementById('stud-combination-group');
+    const studCombinationDetails = document.getElementById('studs-combination-details');
 
     if (bootsSelect && studPatternGroup) {
         bootsSelect.addEventListener('change', (e) => {
@@ -79,6 +81,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 studPatternGroup.style.display = 'none';
                 studsSelect.required = false;
                 studsSelect.value = ''; // Reset value
+                if (studCombinationGroup) studCombinationGroup.style.display = 'none';
+                if (studCombinationDetails) {
+                    studCombinationDetails.required = false;
+                    studCombinationDetails.value = '';
+                }
+            }
+        });
+    }
+
+    if (studsSelect && studCombinationGroup && studCombinationDetails) {
+        studsSelect.addEventListener('change', (e) => {
+            if (e.target.value === 'Combination of any of the above') {
+                studCombinationGroup.style.display = 'block';
+                studCombinationDetails.required = true;
+            } else {
+                studCombinationGroup.style.display = 'none';
+                studCombinationDetails.required = false;
+                studCombinationDetails.value = '';
             }
         });
     }
