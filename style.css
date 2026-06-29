@@ -160,12 +160,12 @@ ul {
 
 .badge {
     display: inline-block;
-    padding: 6px 16px;
+    padding: 8px 20px;
     background: var(--pitch-green-glow);
     border: 1px solid var(--pitch-green);
     color: var(--pitch-green);
     border-radius: 100px;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
